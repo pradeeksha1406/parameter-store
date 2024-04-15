@@ -5,4 +5,4 @@ default:
 
 apply:
 	terraform init
-	terraform apply -auto-approve
+	terraform apply -aut o-approve
