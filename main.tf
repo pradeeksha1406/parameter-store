@@ -26,6 +26,10 @@ variable "parameters" {
     { name = "dev.expense.frontend.backend_url", value = "http://backend-dev.techadda.co/", type = "String" },
     { name = "dev.rds.endpoint", value = "prod-mysql.cluster-cdkoq6oem3y2.us-east-1.rds.amazonaws.com", type = "String" },
 
+    ## Common env
+    { name = "jenkins_password", value = "admin123", type = "SecureString" },
+
+
 
 
 
