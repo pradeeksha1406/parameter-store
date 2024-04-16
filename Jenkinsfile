@@ -5,6 +5,8 @@ pipeline {
     ansiColor('xterm')
   }
 
+  stages {
+
     stage('Terraform Apply') {
       steps {
         sh 'make'
