@@ -29,12 +29,5 @@ variable "parameters" {
 
     ## Common env
     { name = "jenkins_password", value = "admin123", type = "SecureString" },
-
-
-
-
-
-
-
-]
-    }
+  ]
+}
