@@ -17,7 +17,7 @@ variable "parameters" {
     { name = "prod.rds.master_username", value = "mysqlrdsadmin", type = "String" },
     { name = "prod.expense.frontend.backend_url", value = "http://backend-prod.techadda.co/", type = "String" },
     { name = "prod.rds.endpoint", value = "prod-mysql.cluster-cdkoq6oem3y2.us-east-1.rds.amazonaws.com", type = "String" },
-    { name = "prod.frontend.app_version", value = "2.0.0", type = "String" },
+    { name = "prod.frontend.app_version", value = "1.0.0", type = "String" },
     { name = "prod.backend.app_version", value = "2.0.0", type = "String" },
 
 
