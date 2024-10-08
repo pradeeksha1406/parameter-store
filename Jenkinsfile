@@ -44,10 +44,11 @@ pipeline {
           always {
               cleanWs()
           }
- }
+      }
 //       stage('Terraform Apply') {
 //       steps {
 //         sh 'make apply'
 //       }
-//     }
+  }
+}
 
