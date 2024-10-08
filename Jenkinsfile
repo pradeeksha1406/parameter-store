@@ -6,9 +6,9 @@ pipeline {
     docker { image 'node:16-alpine' }
   }
 
-  options {
-    ansiColor('xterm')
-  }
+//   options {
+//     ansiColor('xterm')
+//   }
 
   stages {
 
