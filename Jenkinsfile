@@ -1,6 +1,3 @@
-// pipeline {
-//   agent { label 'workstation'}
-
 pipeline {
      agent {
          docker { image 'hashicorp/terraform:latest' }
@@ -39,16 +36,11 @@ pipeline {
                   }
               }
           }
-      }
-      post {
-          always {
-              cleanWs()
-          }
-      }
-//       stage('Terraform Apply') {
-//       steps {
-//         sh 'make apply'
-//       }
+         stage('Terraform Apply') {
+            steps {
+               sh 'make apply'
+            }
+         }
   }
 }
 
