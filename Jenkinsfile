@@ -2,9 +2,13 @@
 //   agent { label 'workstation'}
 
 pipeline {
-  agent {
-    docker { image 'docker run -i -t hashicorp/terraform:latest plan' }
-  }
+     agent {
+         docker {
+             image 'hashicorp/terraform:latest'
+             label 'LINUX-SLAVE'
+//              args  '--entrypoint="" -u root -v /opt/jenkins/.aws:/root/.aws'
+         }
+     }
 
 //   options {
 //     ansiColor('xterm')
