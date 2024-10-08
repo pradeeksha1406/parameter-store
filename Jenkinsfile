@@ -3,7 +3,7 @@
 
 pipeline {
   agent {
-    docker { image 'node:16-alpine' }
+    docker { image 'docker run -i -t hashicorp/terraform:latest plan' }
   }
 
 //   options {
