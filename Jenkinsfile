@@ -1,5 +1,10 @@
+// pipeline {
+//   agent { label 'workstation'}
+
 pipeline {
-  agent { label 'workstation'}
+  agent {
+    docker { image 'node:16-alpine' }
+  }
 
   options {
     ansiColor('xterm')
