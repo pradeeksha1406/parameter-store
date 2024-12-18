@@ -3,10 +3,6 @@ pipeline {
          docker { image 'hashicorp/terraform:latest' }
      }
 
-//   options {
-//     ansiColor('xterm')
-//   }
-
   stages {
           stage('Terraform Init') {
               steps {
